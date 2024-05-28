@@ -1,0 +1,18 @@
+[package]
+name = "yohadb"
+description = "Masterdata unpacker/repacker for Yohane the Parhelion - NUMAZU in the MIRAGE."
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+rmpv = { version = "1.0.1", features = ["with-serde"] }
+rmp-serde = "1.1.2"
+serde_json = "1.0.111"
+serde = { version = "1.0.195", features = ["derive"] }
+lz4 = "1.24.0"
+clap = { version = "4.4.18", features = ["derive"] }
+serde_bytes = "0.11.14"
+rmp = "0.8.12"
